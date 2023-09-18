@@ -1,0 +1,168 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body class="page">
+    <div class="gallery">
+      <div class="cover_art skin1"></div>
+      <div class="cover_art skin2"></div>
+      <div class="cover_art skin3"></div>
+      <div class="cover_art skin4"></div>
+      <div class="cover_art skin5"></div>
+      <div class="cover_art skin6"></div>
+      <div class="cover_art skin7"></div>
+      <div class="cover_art skin8"></div>
+      <div class="cover_art skin9"></div>
+      <div class="cover_art skin10"></div>
+      <div class="cover_art skin11"></div>
+      <div class="cover_art skin12"></div>
+      <div class="cover_art skin13"></div>
+      <div class="cover_art skin14"></div>
+      <div class="cover_art skin21"></div>
+      <div class="cover_art skin22"></div>
+      <div class="cover_art skin23"></div>
+      <div class="cover_art skin24"></div>
+      <div class="cover_art skin25"></div>
+      <div class="cover_art skin26"></div>
+      <div class="cover_art skin27"></div>
+      <div class="cover_art skin28"></div>
+      <div class="cover_art skin29"></div>
+      <div class="cover_art skin210"></div>
+      <div class="cover_art skin211"></div>
+      <div class="cover_art skin212"></div>
+      <div class="cover_art skin213"></div>
+      <div class="cover_art skin214"></div>
+    </div>
+  </body>
+  <style>
+    .page {
+  margin: 20px;
+}
+.gallery {
+  display: grid;
+  gap: 20px;
+  grid: repeat(4, 1fr) / repeat(5, 1fr);
+  background-size: cover;
+}
+.cover_art {
+  background-color: #808080;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+}
+.skin1 {
+  background-image: url(k6.PNG);
+}
+.skin2 {
+    background-image: url(p\ \(15\).jpg);
+}
+.skin3 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(p\ \(14\).jpg);
+}
+.skin4 {
+    background-image: url(p\ \(10\).jpg);
+}
+.skin5 {
+    background-image: url(p\ \(13\).jpg);
+}
+.skin6 {
+    background-image: url(p\ \(9\).jpg);
+}
+.skin7 {
+    background-image: url(p\ \(8\).jpg);
+}
+.skin8 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(p\ \(7\).jpg);
+}
+.skin9 {
+    background-image: url(p\ \(6\).jpg);
+}
+.skin10 {
+    background-image: url(p\ \(5\).jpg);
+}
+.skin11 {
+    background-image: url(p\ \(4\).jpg);
+}
+.skin12 {
+    background-image: url(p\ \(3\).jpg);
+}
+.skin13 {
+    background-image: url(p\ \(2\).jpg);
+}
+.skin14 {
+    background-image: url(p\ \(1\).jpg);
+}
+
+.skin21 {
+  background-image: url(w1.PNG);
+}
+.skin22 {
+    background-image: url(w2.PNG);
+}
+.skin23 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(w3.PNG);
+}
+.skin24 {
+    background-image: url(w4.PNG);
+}
+.skin25 {
+    background-image: url(w5.PNG);
+}
+.skin26 {
+    background-image: url(k1.PNG);
+}
+.skin27 {
+    background-image: url(k2.PNG);
+}
+.skin28 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(k3.PNG);
+}
+.skin29 {
+    background-image: url(k4.PNG);
+}
+.skin210 {
+    background-image: url(k5.PNG);
+}
+.skin211 {
+    background-image: url(k11.PNG);
+}
+.skin212 {
+    background-image: url(k7.PNG);
+}
+.skin213 {
+    background-image: url(k8.PNG);
+}
+.skin214 {
+    background-image: url(k9.PNG);
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skin3,
+  .skin8 {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .skin3,
+  .skin8 {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+}
+
+  </style>

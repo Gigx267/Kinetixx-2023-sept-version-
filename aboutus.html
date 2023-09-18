@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Kinetixx is a combination of images from special moments in my life captioned by famous readings and quotes from books that i find to be amazing " content="">
+    <meta name="Kelechi Nwachukwu " content="">
+    <title>Home | Kinetixx</title>
+   
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+   
+</head><!--/head-->
+
+<body>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                   
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                    	
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="aboutus.html">About </a></li>
+                        <li class="active"><a href="gallery.html">Gallery </a></li>
+                        <li class="active"><a href="contact.html">Contact </a></li>
+                </div>
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+  
+  <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js" crossorigin="anonymous"></script>
+<script type="importmap">
+  
+</script>
+
+<div id="background">
+  <label><input type="radio" name="photo" checked />
+    <canvas id="canvas"></canvas>
+  </label>
+  <img id="bgimg" src="https://happy358.github.io/Images/textures/window.png" />
+</div>
+
+<main>
+  <section>
+    <div>
+      <h5 style="color: rgb(212, 145, 28) ;font-style: normal; font-size: larger " >Spending so much time in my bedroom<br> i decided to expand my experince <br> of the world which lead to the<br>  creation of Kinetixx <br> At Kinetixx, my life  has been a<br>  continuous journey <br>to stand before the remarkable,
+         to embrace the extraordinary, <br>and to celebrate the beauty that envelops us.<br> For me Adventure,<br>
+         photography isn't just a passion;<br>
+         it's a profound way to share the moments<br> I been fortunate enough to witness<br> with the world.<br>
+         I recognize that our homeland<br> is vast and diverse, with countless <br>stories to tell and<br>
+          wonders to explore. <br>However, I have chosen to <br>concentrate my lens on <br>the artistic expressions,<br>
+           the luxurious offerings, <br>and the untouched natural bodies<br> that make our country truly unique.<br>
+            By focusing on these facets,<br>
+          I hope to not only celebrate their <br>beauty but also inspire <br>others to appreciate and protect them.</h5>
+    </div>
+  </section>
+  <section>
+    <div>
+      <p></p>
+    </div>
+  </section>
+  <section>
+    <div>
+    </div>
+  </section>
+  <section>
+    <div>
+      
+    </div>
+  </section>
+  <section>
+    <div>
+      <p></p>
+    </div>
+  </section>
+  <section>
+    <div>
+      <p></p>
+    </div>
+  </section>
+  <footer>
+    <a target="_blank" href="https://codepen.io/wakana-k/">@wakana-k</a>
+  </footer>
+</main>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;700&display=swap");
+:root {
+  --bg_width: 640px;
+  --bg_height: 360px;
+
+  /* main */
+  --gap_left: 140px;
+  --gap_top: 20px;
+  --clip_w: 350px;
+  --clip_h: 220px;
+
+  --ratio: 0;
+  --centerShift_x: calc((100vw - var(--bg_width) * var(--ratio)) / 2);
+  --centerShift_y: calc((100vh - var(--bg_height) * var(--ratio)) / 2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#background {
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  background: white;
+}
+html {
+  /* Adjust font size */
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+body {
+  position: relative;
+  color: #fff;
+  font-family: "Shantell Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  line-height: 1;
+  overflow-x: hidden;
+}
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+main {
+  position: relative;
+}
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: visible;
+}
+h1,
+h2 {
+  font-weight: 400;
+  filter: drop-shadow(1px 0px 1px rgba(0, 0, 0, 0.8));
+}
+h1 {
+  font-size: 8vw;
+}
+h2 {
+  font-size: 30px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+ul {
+  max-width: 80vw;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+li {
+  list-style: none;
+  font-size: 15px;
+  text-align: left;
+  margin: 30px 0;
+}
+img,
+canvas,
+input[type="radio"],
+label {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: none;
+}
+#background > * {
+  position: absolute;
+  top: calc(var(--centerShift_y) + var(--gap_top) * var(--ratio));
+  left: calc(var(--centerShift_x) + var(--gap_left) * var(--ratio));
+  width: calc(var(--clip_w) * var(--ratio));
+  height: calc(var(--clip_h) * var(--ratio));
+}
+#bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  /*
+  mask-image: url(xxxxxx);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  */
+}
+
+label img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--clip_w) * var(--ratio));
+  height: calc(var(--clip_h) * var(--ratio));
+  object-fit: cover;
+}
+label canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--clip_w) * var(--ratio));
+  height: calc(var(--clip_h) * var(--ratio));
+  transform: scale(var(--ratio));
+  transform-origin: top left;
+}
+input:checked + * {
+  opacity: 1;
+}
+footer a {
+  color: #fff;
+}
+
+</style>
+<script>
+Window view
+@wakana-k
+https://codepen.io/wakana-k/pen/zYyZOYy
+Copyright (c) 2023 by Wakana Y.K. 
+*/
+"use strict";
+
+import * as THREE from "three";
+
+import { RGBELoader as e } from "three/addons/loaders/RGBELoader.js";
+
+!(function () {
+  function t() {
+    const e = window.innerWidth,
+      t = window.innerHeight;
+    let o = e / n,
+      r = t / a,
+      l = Math.max(o, r);
+    i.style.setProperty("--ratio", l);
+  }
+  function o() {
+    requestAnimationFrame(o), (m.rotation.y -= 0.0005), p.render(d, s);
+  }
+  const i = document.querySelector(":root"),
+    n = parseFloat(window.getComputedStyle(i).getPropertyValue("--bg_width")),
+    a = parseFloat(window.getComputedStyle(i).getPropertyValue("--bg_height")),
+    r = parseInt(window.getComputedStyle(i).getPropertyValue("--clip_w")),
+    l = parseInt(window.getComputedStyle(i).getPropertyValue("--clip_h"));
+  let s, d, p, c, u, w, m;
+  t(), (window.onresize = t);
+  let y = 1;
+  const E = 50;
+  let g,
+    h,
+    R = 1,
+    H = 0;
+  !(function () {
+    ((d = new THREE.Scene()).background = null),
+      (p = new THREE.WebGLRenderer({
+        antialias: !0,
+        canvas: canvas
+      })).setPixelRatio(window.devicePixelRatio),
+      p.setSize(r, l),
+      p.setClearColor(16777215, 0),
+      (p.useLegacyLights = !1),
+      (p.toneMapping = THREE.ACESFilmicToneMapping),
+      (s = new THREE.PerspectiveCamera(35, r / l, 0.1, 100 * y)).position.set(
+        0,
+        0,
+        0
+      ),
+      s.lookAt(0, 0, 0);
+    const t = new THREE.AmbientLight(16777215, 3);
+    d.add(t),
+      (c = new THREE.SphereGeometry(y, E, E)),
+      (u = new THREE.MeshLambertMaterial({
+        side: THREE.FrontSide,
+        transparent: !0,
+        opacity: 1
+      })),
+      (w = new THREE.Mesh(c, u)),
+      (g = ""),
+      (h =
+        "https://happy358.github.io/Images/HDR/kloofendal_48d_partly_cloudy_puresky_1k.hdr"),
+      ((m = (function (t = 1, o = 0, i = "", n = "") {
+        let a = w.clone();
+        if (((a.material = u.clone()), n)) {
+          let t = new e().load(n);
+          a.material.map = t;
+        }
+        return (
+          i && a.material.color.set(i),
+          (a.position.x = o),
+          a.scale.set(t, t, t),
+          a
+        );
+      })(
+        (R = 50),
+        (H = 0),
+        "",
+        "https://happy358.github.io/Images/HDR/kloofendal_48d_partly_cloudy_puresky_1k.hdr"
+      )).material.side = THREE.BackSide),
+      (m.position.y = -10),
+      d.add(m),
+      o();
+  })();
+})();
+</script>
+
+</script>
